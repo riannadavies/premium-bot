@@ -11,7 +11,7 @@ bot.on('ready', () => {
 
 // Every time a message is sent anywhere the bot is present,
 // this event will fire and we will check if the bot was mentioned.
-// If it was, the bot will attempt to respond with "Present".
+// If it was, the bot will attempt to respond with "no".
 bot.on('messageCreate', async (msg) => {
   const botWasMentioned = msg.mentions.find(
     mentionedUser => mentionedUser.id === bot.user.id,
